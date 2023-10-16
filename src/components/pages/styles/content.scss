@@ -1,0 +1,25 @@
+.content {
+  height: 100vh;
+  width: 60%;
+  background-color: var(--primary-backdround-color);
+  color: var(--primary-color);
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    margin-left: 2em;
+    width: 60%;
+    span {
+      color: var(--selected-color);
+      font-family: Roboto bold;
+    }
+  }
+  &__title {
+    text-transform: uppercase;
+    font-size: 40px;
+  }
+  &__descr {
+    font-size: 28px;
+  }
+}

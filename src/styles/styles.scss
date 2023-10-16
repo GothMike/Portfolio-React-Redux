@@ -1,0 +1,16 @@
+@import url(./variables.scss);
+@import url(./fonts.scss);
+
+@import url(../components/sidebar/styles/sidebar.scss);
+
+@import url(../components/pages/styles/content.scss);
+
+* {
+  font-family: Roboto sans-serif;
+  margin: 0;
+}
+
+.page {
+  display: flex;
+  position: relative;
+}
