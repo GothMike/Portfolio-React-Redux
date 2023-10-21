@@ -2,8 +2,12 @@
 @import url(./fonts.scss);
 
 @import url(../components/sidebar/styles/sidebar.scss);
+@import url(../components/sidebar/styles/media.scss);
 
 @import url(../components/pages/styles/content.scss);
+@import url(../components/pages/styles/media.scss);
+
+@import url(../components/linkResume/linkResume.scss);
 
 * {
   font-family: Roboto sans-serif;
