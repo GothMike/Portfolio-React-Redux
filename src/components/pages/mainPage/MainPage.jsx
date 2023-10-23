@@ -2,8 +2,17 @@ import { Link } from "react-router-dom";
 import Sidebar from "../../sidebar/Sidebar";
 import { Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useDispatch } from "react-redux";
+import { toogleVisabilitySidebar } from "../../../redux/actions/visability";
+import { useEffect } from "react";
 
 const MainPage = () => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(toogleVisabilitySidebar(false));
+  }, []);
+
   return (
     <>
       <div className="page">
@@ -33,9 +42,7 @@ const MainPage = () => {
             <h1 className="content__title">
               Михаил <br /> <span>Воронин</span>
             </h1>
-            <h2 className="content__descr">
-              Привет, <span>я Михаил Воронин</span>,<br />Я Full-Stack developer .NET | React
-            </h2>
+            <h2 className="content__descr"> Full-Stack developer .NET | React</h2>
             <div className="content__btn">
               <Button variant="primary">
                 <Link className="sidebar__link  " to="/">

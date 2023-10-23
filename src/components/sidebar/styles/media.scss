@@ -1,5 +1,8 @@
 @media (max-width: 768px) {
   .sidebar {
+    &__hidden {
+      width: 40%;
+    }
     &__list {
       padding-left: 20px;
     }

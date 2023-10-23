@@ -5,6 +5,9 @@
   width: 40%;
   background-color: var(--background-color-sidebar);
   color: var(--primary-color);
+  &__hidden {
+    width: 15%;
+  }
   &__list {
     display: flex;
     flex-direction: column;

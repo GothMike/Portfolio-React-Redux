@@ -6,6 +6,9 @@
   width: 80%;
   background-color: var(--primary-backdround-color);
   color: var(--primary-color);
+  &__full {
+    width: 100%;
+  }
   &__wrapper {
     display: flex;
     flex-direction: column;
