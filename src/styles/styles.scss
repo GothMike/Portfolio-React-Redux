@@ -18,3 +18,15 @@
   display: flex;
   position: relative;
 }
+
+.burger {
+  position: fixed;
+  z-index: 1;
+  top: 5%;
+  left: 10%;
+  cursor: pointer;
+  visibility: visible;
+  &_hidden {
+    visibility: hidden;
+  }
+}

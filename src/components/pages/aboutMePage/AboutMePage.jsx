@@ -1,11 +1,11 @@
 import { useEffect } from "react";
 import Sidebar from "../../sidebar/Sidebar";
 import { useDispatch, useSelector } from "react-redux";
-import { toogleVisabilitySidebar } from "../../../redux/actions/visability";
+import { toogleVisabilitySidebar } from "../../../redux/actions/sidebar";
 
 const AboutMePage = () => {
   const dispatch = useDispatch();
-  const fullscreen = useSelector((state) => state.visability.sidebar);
+  const fullscreen = useSelector((state) => state.sidebar.bigSidebar);
   const fullScreenContent = fullscreen ? "content__full" : "";
 
   useEffect(() => {
