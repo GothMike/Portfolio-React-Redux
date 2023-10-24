@@ -7,7 +7,6 @@
   background-color: var(--primary-backdround-color);
   color: var(--primary-color);
   filter: drop-shadow(0 0 50px var(--selected-color));
-
   &__full {
     width: 100%;
   }
@@ -106,6 +105,53 @@
       &::before {
         background-color: #32b341;
       }
+    }
+  }
+
+  &__sticker {
+    position: absolute;
+    max-width: 50px;
+    max-height: 50px;
+    &:nth-child(1) {
+      top: 15%;
+      left: 20%;
+      animation: pulse 3s infinite;
+    }
+    &:nth-child(2) {
+      top: 5%;
+      left: 30%;
+      animation: pulse 4s infinite;
+    }
+    &:nth-child(3) {
+      top: 15%;
+      left: 40%;
+      animation: pulse 5s infinite;
+    }
+    &:nth-child(4) {
+      top: 5%;
+      left: 50%;
+      animation: pulse 4s infinite;
+    }
+    &:nth-child(5) {
+      top: 15%;
+      left: 60%;
+      animation: pulse 3s infinite;
+    }
+    &:nth-child(6) {
+      top: 90%;
+      left: 20%;
+    }
+    &:nth-child(7) {
+      top: 80%;
+      left: 35%;
+    }
+    &:nth-child(8) {
+      top: 90%;
+      left: 50%;
+    }
+    &:nth-child(9) {
+      top: 80%;
+      left: 65%;
     }
   }
 }
