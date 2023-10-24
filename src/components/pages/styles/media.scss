@@ -1,5 +1,8 @@
 @media (max-width: 1024px) {
   .content {
+    min-height: 100vh;
+    height: 100%;
+
     &__title {
       text-transform: uppercase;
       font-size: 32px;
@@ -17,6 +20,8 @@
     flex-direction: column;
     justify-content: center;
     width: 100%;
+    filter: inherit;
+
     &__wrapper {
       align-items: center;
     }

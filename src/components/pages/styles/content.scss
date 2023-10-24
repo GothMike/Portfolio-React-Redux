@@ -6,6 +6,8 @@
   width: 80%;
   background-color: var(--primary-backdround-color);
   color: var(--primary-color);
+  filter: drop-shadow(0 0 50px var(--selected-color));
+
   &__full {
     width: 100%;
   }
@@ -15,6 +17,7 @@
     justify-content: center;
     height: 100%;
     width: 100%;
+    filter: drop-shadow(0 0 100px var(--selected-color));
     span {
       color: var(--selected-color);
       font-family: Roboto bold;
@@ -22,6 +25,8 @@
   }
   &__title {
     text-transform: uppercase;
+    font-family: Roboto bold;
+
     font-size: 40px;
   }
   &__descr {
@@ -58,6 +63,7 @@
     justify-content: center;
     align-items: center;
     color: inherit !important;
+
     svg {
       color: var(--primary-color);
     }
