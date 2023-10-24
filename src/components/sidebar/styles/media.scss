@@ -1,10 +1,24 @@
+@media (max-width: 1400px) {
+  .sidebar {
+    &__small {
+      width: 30%;
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .sidebar {
+    &__hidden {
+      width: 0%;
+    }
     &__list {
-      padding-left: 20px;
+      margin-right: 10px;
     }
     &__item {
       font-size: 16px;
+      &_hidden {
+        font-size: 0px;
+      }
     }
     &__link {
       &:hover {
@@ -23,6 +37,9 @@
     &__item {
       font-size: 12px;
       line-height: 50px;
+      &_hidden {
+        font-size: 0px;
+      }
     }
   }
 }

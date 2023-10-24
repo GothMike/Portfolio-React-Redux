@@ -1,5 +1,8 @@
 @media (max-width: 1024px) {
   .content {
+    min-height: 100vh;
+    height: 100%;
+
     &__title {
       text-transform: uppercase;
       font-size: 32px;
@@ -17,6 +20,42 @@
     flex-direction: column;
     justify-content: center;
     width: 100%;
+    filter: inherit;
+    &__sticker {
+      max-height: 35px;
+      max-width: 35px;
+      &:nth-child(1) {
+        top: 0%;
+      }
+      &:nth-child(2) {
+        top: -10%;
+      }
+      &:nth-child(3) {
+        top: 0%;
+      }
+      &:nth-child(4) {
+        top: -10%;
+      }
+      &:nth-child(5) {
+        top: 0%;
+      }
+      &:nth-child(6) {
+        top: 15%;
+        left: 75%;
+      }
+      &:nth-child(7) {
+        top: 25%;
+        left: 85%;
+      }
+      &:nth-child(8) {
+        top: 35%;
+        left: 75%;
+      }
+      &:nth-child(9) {
+        top: 45%;
+        left: 85%;
+      }
+    }
     &__wrapper {
       align-items: center;
     }
@@ -29,6 +68,8 @@
       text-align: center;
     }
     &__photo {
+      margin-top: 50px;
+
       transform: translateX(0);
     }
     img {
@@ -77,6 +118,50 @@
   }
 }
 
+@media (max-width: 650px) {
+  .content {
+    &__sticker {
+      max-height: 35px;
+      max-width: 35px;
+      &:nth-child(1) {
+        top: 7%;
+      }
+      &:nth-child(2) {
+        top: 0%;
+        left: 35%;
+      }
+      &:nth-child(3) {
+        top: 7%;
+        left: 45%;
+      }
+      &:nth-child(4) {
+        top: 0%;
+        left: 55%;
+      }
+      &:nth-child(5) {
+        top: 7%;
+        left: 65%;
+      }
+      &:nth-child(6) {
+        top: 15%;
+        left: 75%;
+      }
+      &:nth-child(7) {
+        top: 25%;
+        left: 85%;
+      }
+      &:nth-child(8) {
+        top: 35%;
+        left: 75%;
+      }
+      &:nth-child(9) {
+        top: 45%;
+        left: 85%;
+      }
+    }
+  }
+}
+
 @media (max-width: 425px) {
   .content {
     &__wrapper {
@@ -93,9 +178,35 @@
     &__descr {
       font-size: 12px;
     }
+    &__photo {
+      margin-top: 0;
+    }
     img {
-      margin-top: 150px;
+      margin-top: 100px;
       width: 50%;
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .content {
+    &__sticker {
+      &:nth-child(6) {
+        top: 72%;
+        left: 15%;
+      }
+      &:nth-child(7) {
+        top: 77%;
+        left: 35%;
+      }
+      &:nth-child(8) {
+        top: 72%;
+        left: 55%;
+      }
+      &:nth-child(9) {
+        top: 77%;
+        left: 75%;
+      }
     }
   }
 }

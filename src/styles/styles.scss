@@ -1,11 +1,15 @@
 @import url(./variables.scss);
 @import url(./fonts.scss);
+@import url(./animations.scss);
 
 @import url(../components/sidebar/styles/sidebar.scss);
 @import url(../components/sidebar/styles/media.scss);
 
 @import url(../components/pages/styles/content.scss);
 @import url(../components/pages/styles/media.scss);
+
+@import url(../components/pages/aboutMePage/styles/about.scss);
+@import url(../components/pages/aboutMePage/styles/media.scss);
 
 @import url(../components/linkResume/linkResume.scss);
 
@@ -17,4 +21,16 @@
 .page {
   display: flex;
   position: relative;
+}
+
+.burger {
+  position: fixed;
+  z-index: 1;
+  top: 5%;
+  left: 10%;
+  cursor: pointer;
+  visibility: visible;
+  &_hidden {
+    visibility: hidden;
+  }
 }
