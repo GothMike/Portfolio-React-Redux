@@ -8,8 +8,11 @@
 @import url(../components/pages/styles/content.scss);
 @import url(../components/pages/styles/media.scss);
 
-@import url(../components/pages/aboutMePage/styles/about.scss);
-@import url(../components/pages/aboutMePage/styles/media.scss);
+@import url(../components/pages/aboutPage/styles/about.scss);
+@import url(../components/pages/aboutPage/styles/media.scss);
+
+@import url(../components/pages/skillsPage/styles/skills.scss);
+@import url(../components/pages/skillsPage/styles/media.scss);
 
 @import url(../components/linkResume/linkResume.scss);
 
@@ -18,7 +21,7 @@
   margin: 0;
 }
 
-.page {
+#root {
   display: flex;
   position: relative;
 }

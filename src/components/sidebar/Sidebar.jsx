@@ -34,12 +34,12 @@ const Sidebar = () => {
             </Link>
           </li>
           <li className={`sidebar__item ${visibleItem}`}>
-            <Link className="sidebar__link" to="/aboutMe">
+            <Link className="sidebar__link" to="/about">
               Обо мне
             </Link>
           </li>
           <li className={`sidebar__item ${visibleItem}`}>
-            <Link className="sidebar__link" to="/">
+            <Link className="sidebar__link" to="/skills">
               Навыки
             </Link>
           </li>
