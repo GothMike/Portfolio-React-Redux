@@ -2,7 +2,8 @@
   position: relative;
   display: flex;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
   width: 80%;
   background-color: var(--primary-backdround-color);
   color: var(--primary-color);

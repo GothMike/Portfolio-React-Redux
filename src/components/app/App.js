@@ -1,7 +1,8 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import MainPage from "../pages/mainPage/MainPage";
-import AboutMePage from "../pages/aboutMePage/AboutMePage";
+import AboutPage from "../pages/aboutPage/AboutPage";
 import LinkResume from "../linkResume/LinkResume";
+import SkillsPage from "../pages/skillsPage/SkillsPage";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
@@ -15,7 +16,8 @@ const App = () => {
     <Router>
       <Routes>
         <Route path="/" element={<MainPage />} />
-        <Route path="/aboutMe" element={<AboutMePage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/skills" element={<SkillsPage />} />
       </Routes>
       <LinkResume />
     </Router>

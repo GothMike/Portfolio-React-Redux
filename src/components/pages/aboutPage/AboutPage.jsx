@@ -1,13 +1,11 @@
 import { useEffect, useState } from "react";
-import Sidebar from "../../sidebar/Sidebar";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { toogleVisabilitySidebar } from "../../../redux/actions/sidebar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Sidebar from "../../sidebar/Sidebar";
 
 const AboutMePage = () => {
   const dispatch = useDispatch();
-  const fullscreen = useSelector((state) => state.sidebar.bigSidebar);
-  const fullScreenContent = fullscreen ? "content__full" : "";
   const [selectedCard, setSelectedCard] = useState("fullStack");
 
   useEffect(() => {
@@ -39,7 +37,7 @@ const AboutMePage = () => {
       case "backend":
         return (
           <p className="about__view-descr">
-            Я разработываю серверную часть веб-приложения. Моя работа включает в себя создание и
+            Я разрабатываю серверную часть веб-приложения. Моя работа включает в себя создание и
             обслуживание API для взаимодействия с клиентской частью приложения. Я также занимаетесь
             работой с базами данных, включая создание, обновление и запросы к данным.
           </p>
@@ -56,9 +54,9 @@ const AboutMePage = () => {
   };
 
   return (
-    <div className="page">
+    <>
       <Sidebar />
-      <main className={`content ${fullScreenContent}`}>
+      <main className={`content content__full`}>
         <section className="about">
           <div className="about__cards">
             <div
@@ -125,7 +123,7 @@ const AboutMePage = () => {
           </div>
         </section>
       </main>
-    </div>
+    </>
   );
 };
 
