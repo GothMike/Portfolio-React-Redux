@@ -68,3 +68,11 @@
     }
   }
 }
+
+@media (max-width: 450px) {
+  .skills {
+    &__card {
+      height: 220px;
+    }
+  }
+}

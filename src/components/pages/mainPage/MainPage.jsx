@@ -18,7 +18,7 @@ const MainPage = () => {
       <Sidebar />
       <main className="content">
         <div className="content__photo">
-          <img src="./photo.webp" alt="photo_author" />
+          <img src="./Photo.webp" alt="photo_author" />
           <div className="content__socials">
             <div className="content__social content__social_linkedin">
               <Link to="https://linkedin.com/in/gothmike">
