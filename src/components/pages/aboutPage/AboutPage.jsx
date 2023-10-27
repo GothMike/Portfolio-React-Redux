@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
-import { toogleVisabilitySidebar } from "../../../redux/actions/sidebar";
+import { toogleWidthSidebar, toogleVisabilitySidebar } from "../../../redux/actions/sidebar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Sidebar from "../../sidebar/Sidebar";
 
@@ -9,7 +9,7 @@ const AboutMePage = () => {
   const [selectedCard, setSelectedCard] = useState("fullStack");
 
   useEffect(() => {
-    dispatch(toogleVisabilitySidebar(true));
+    dispatch(toogleWidthSidebar(true));
   }, []);
 
   const ChooseCard = () => {

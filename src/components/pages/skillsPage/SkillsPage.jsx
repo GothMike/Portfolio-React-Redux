@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { toogleVisabilitySidebar } from "../../../redux/actions/sidebar";
+import { toogleWidthSidebar, toogleVisabilitySidebar } from "../../../redux/actions/sidebar";
 import { skillsFetching } from "../../../redux/actions/skills";
 import SkillsCard from "./SkillsCard";
 import Spinner from "../../spinner/Spinner";
@@ -12,7 +12,7 @@ const SkillsPage = () => {
   const skillsLoadingStatus = useSelector((state) => state.skills.skillsLoadingStatus);
 
   useEffect(() => {
-    dispatch(toogleVisabilitySidebar(true));
+    dispatch(toogleWidthSidebar(true));
     dispatch(skillsFetching());
   }, []);
 

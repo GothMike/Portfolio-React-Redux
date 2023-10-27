@@ -36,8 +36,9 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   .resume {
+    top: 3%;
     width: 170px;
     height: 35px;
     &__text {

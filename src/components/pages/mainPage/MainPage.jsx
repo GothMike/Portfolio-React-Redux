@@ -3,14 +3,14 @@ import Sidebar from "../../sidebar/Sidebar";
 import { Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useDispatch } from "react-redux";
-import { toogleVisabilitySidebar } from "../../../redux/actions/sidebar";
+import { toogleWidthSidebar, toogleVisabilitySidebar } from "../../../redux/actions/sidebar";
 import { useEffect } from "react";
 
 const MainPage = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(toogleVisabilitySidebar(false));
+    dispatch(toogleWidthSidebar(false));
   }, [dispatch]);
 
   return (

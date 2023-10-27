@@ -1,16 +1,24 @@
-import { useSelector } from "react-redux";
-import { Link } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
+import { NavLink } from "react-router-dom";
 import { useMediaQuery } from "react-responsive";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { toogleVisabilitySidebar } from "../../redux/actions/sidebar";
 
 const Sidebar = () => {
+  const dispatch = useDispatch();
   const isMobile = useMediaQuery({ maxWidth: 475 });
-  const sidebar = useSelector((state) => state.sidebar.bigSidebar);
+  const sidebarWidth = useSelector((state) => state.sidebar.bigSidebar);
+  const sidebarVisability = useSelector((state) => state.sidebar.visability);
   const [sidebarVisible, setSidebarVisible] = useState(true);
-  const visibleMenu = !isMobile || sidebarVisible ? "" : "sidebar__hidden";
+  const visibleSidebar = sidebarVisability ? "sidebar sidebar__hidden" : "";
+  const visibleMenu = !isMobile || sidebarVisible ? "" : "sidebar sidebar__hidden";
   const visibleItem = sidebarVisible ? "" : "sidebar__item_hidden";
-  const smallSidebar = sidebar ? "sidebar__small" : "";
+  const smallSidebar = sidebarWidth ? "sidebar__small" : "";
+
+  useEffect(() => {
+    dispatch(toogleVisabilitySidebar(isMobile));
+  }, []);
 
   const burger = isMobile ? (
     <FontAwesomeIcon
@@ -26,32 +34,52 @@ const Sidebar = () => {
     <>
       {burger}
 
-      <nav className={`sidebar ${smallSidebar} ${visibleMenu}`}>
+      <nav className={`${visibleSidebar} ${smallSidebar} ${visibleMenu}`}>
         <ul className="sidebar__list">
           <li className={`sidebar__item ${visibleItem}`}>
-            <Link className="sidebar__link" to="/">
+            <NavLink
+              className="sidebar__link"
+              style={({ isActive }) => ({ color: isActive ? "#9197e0" : "inherit" })}
+              to="/"
+            >
               Главная
-            </Link>
+            </NavLink>
           </li>
           <li className={`sidebar__item ${visibleItem}`}>
-            <Link className="sidebar__link" to="/about">
+            <NavLink
+              className="sidebar__link"
+              style={({ isActive }) => ({ color: isActive ? "#9197e0" : "inherit" })}
+              to="/about"
+            >
               Обо мне
-            </Link>
+            </NavLink>
           </li>
           <li className={`sidebar__item ${visibleItem}`}>
-            <Link className="sidebar__link" to="/skills">
+            <NavLink
+              className="sidebar__link"
+              style={({ isActive }) => ({ color: isActive ? "#9197e0" : "inherit" })}
+              to="/skills"
+            >
               Навыки
-            </Link>
+            </NavLink>
           </li>
-          <li className={`sidebar__item ${visibleItem}`}>
-            <Link className="sidebar__link" to="/">
+          {/* <li className={`sidebar__item ${visibleItem}`}>
+            <NavLink
+              className="sidebar__link"
+              style={({ isActive }) => ({ color: isActive ? "#9197e0" : "inherit" })}
+              to="/"
+            >
               Портфолио
-            </Link>
-          </li>
+            </NavLink>
+          </li> */}
           <li className={`sidebar__item ${visibleItem}`}>
-            <Link className="sidebar__link  " to="/">
+            <NavLink
+              className="sidebar__link  "
+              style={({ isActive }) => ({ color: isActive ? "#9197e0" : "inherit" })}
+              to="/"
+            >
               Контакты
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </nav>
