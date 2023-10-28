@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { toogleWidthSidebar, toogleVisabilitySidebar } from "../../../redux/actions/sidebar";
+import { toogleWidthSidebar } from "../../../redux/actions/sidebar";
 import { skillsFetching } from "../../../redux/actions/skills";
 import SkillsCard from "./SkillsCard";
 import Spinner from "../../spinner/Spinner";

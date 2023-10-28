@@ -8,11 +8,17 @@
 @import url(../components/pages/styles/content.scss);
 @import url(../components/pages/styles/media.scss);
 
+@import url(../components/socials/styles/socials.scss);
+@import url(../components/socials/styles/media.scss);
+
 @import url(../components/pages/aboutPage/styles/about.scss);
 @import url(../components/pages/aboutPage/styles/media.scss);
 
 @import url(../components/pages/skillsPage/styles/skills.scss);
 @import url(../components/pages/skillsPage/styles/media.scss);
+
+@import url(../components/pages/contactsPage/styles/contacts.scss);
+@import url(../components/pages/contactsPage/styles/media.scss);
 
 @import url(../components/linkResume/linkResume.scss);
 
@@ -30,7 +36,7 @@
   position: fixed;
   z-index: 1;
   top: 5%;
-  left: 10%;
+  left: 8%;
   cursor: pointer;
   visibility: visible;
   &_hidden {

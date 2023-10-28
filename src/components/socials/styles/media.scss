@@ -1,0 +1,34 @@
+@media (max-width: 768px) {
+  .social {
+    &_telegram {
+      &:hover {
+        &::before {
+          background-color: #136e9b;
+        }
+      }
+      &::before {
+        background-color: #136e9b;
+      }
+    }
+    &_linkedin {
+      &:hover {
+        &::before {
+          background-color: #183153;
+        }
+      }
+      &::before {
+        background-color: #183153;
+      }
+    }
+    &_whatsapp {
+      &:hover {
+        &::before {
+          background-color: #32b341;
+        }
+      }
+      &::before {
+        background-color: #32b341;
+      }
+    }
+  }
+}

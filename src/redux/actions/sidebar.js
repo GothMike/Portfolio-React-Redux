@@ -4,10 +4,3 @@ export const toogleWidthSidebar = (isActive) => {
     payload: isActive,
   };
 };
-
-export const toogleVisabilitySidebar = (isActive) => {
-  return {
-    type: "SIDEBAR_IS_VISABILITY",
-    payload: isActive,
-  };
-};
