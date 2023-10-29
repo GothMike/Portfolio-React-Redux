@@ -1,6 +1,7 @@
 import { Formik, Form, Field, ErrorMessage, useField } from "formik";
 import { Button } from "react-bootstrap";
 import * as Yup from "yup";
+import axios from "axios";
 
 const MyTextInput = ({ label, ...props }) => {
   const [field, meta] = useField(props);
@@ -17,6 +18,23 @@ const MyTextInput = ({ label, ...props }) => {
 };
 
 const ContactForm = () => {
+  const handleSubmit = async (values, { setSubmitting, resetForm }) => {
+    try {
+      await axios.post("http://localhost:3001/send-mail", {
+        email: values.email,
+        subject: values.company,
+        text: values.text,
+        name: values.name,
+      });
+      alert("Письмо отправлено!");
+      resetForm();
+    } catch (error) {
+      alert("Произошла ошибка при отправке письма.");
+    } finally {
+      setSubmitting(false);
+    }
+  };
+
   return (
     <Formik
       initialValues={{
@@ -31,7 +49,7 @@ const ContactForm = () => {
         email: Yup.string().email("Неправильный email адрес").required("Это поле обязательно!"),
         text: Yup.string().min(10, "Не менее 10 символов"),
       })}
-      onSubmit={(values) => console.log(JSON.stringify(values, null, 2))}
+      onSubmit={handleSubmit}
     >
       <Form className="contacts__form">
         <MyTextInput label="Ваше имя" id="name" name="name" type="text" />
@@ -42,7 +60,9 @@ const ContactForm = () => {
         <Field className="contacts__textarea" id="text" name="text" as="textarea" />
         <ErrorMessage className="error" name="text" component={"div"} />
         <div className="contacts__btn">
-          <Button variant="primary">Связаться со мной</Button>
+          <Button variant="primary" type="submit">
+            Связаться со мной
+          </Button>
         </div>
       </Form>
     </Formik>

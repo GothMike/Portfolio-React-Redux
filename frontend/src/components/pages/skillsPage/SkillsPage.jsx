@@ -63,8 +63,13 @@ const SkillsPage = () => {
     case "error":
       return (
         <>
-          <h2 className="skills__subheader">Навыки</h2>
-          <h3 className="skills__subheader">Произошла ошибка</h3>
+          <Sidebar />
+          <main className="content content__full">
+            <section className="skills">
+              <h2 className="skills__subheader">Навыки</h2>
+              <h2 className="skills__subheader">Произошла ошибка</h2>
+            </section>
+          </main>
         </>
       );
     default:
