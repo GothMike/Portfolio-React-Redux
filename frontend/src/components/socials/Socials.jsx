@@ -20,6 +20,11 @@ const Socials = () => {
             <FontAwesomeIcon size="xl" icon="fa-brands fa-telegram" />
           </Link>
         </div>
+        <div className="social social_mail">
+          <a href="mailto:mikhailvoronin97@gmail.com">
+            <FontAwesomeIcon icon="fa-solid fa-envelope" size="xl" />
+          </a>
+        </div>
       </div>
     </>
   );

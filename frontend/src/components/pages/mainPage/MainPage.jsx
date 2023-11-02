@@ -18,7 +18,7 @@ const MainPage = () => {
       <Sidebar />
       <main className="content content__full">
         <div className="content__photo">
-          <img src="./Photo.webp" alt="photo_author" />
+          <img src="./img/Photo.webp" alt="photo_author" />
           <div className="content__socials">
             <Socials />
           </div>

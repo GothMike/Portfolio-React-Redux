@@ -17,7 +17,8 @@
   }
   &_telegram,
   &_linkedin,
-  &_whatsapp {
+  &_whatsapp,
+  &_mail {
     &:hover {
       &::before {
         background-color: #136e9b;
@@ -53,6 +54,16 @@
     }
     &::before {
       background-color: #32b341;
+    }
+  }
+  &_mail {
+    &:hover {
+      &::before {
+        background-color: #881614;
+      }
+    }
+    &::before {
+      background-color: #c5221f;
     }
   }
 }

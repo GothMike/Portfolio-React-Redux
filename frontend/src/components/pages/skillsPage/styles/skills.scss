@@ -22,25 +22,34 @@
   &__card {
     padding: 15px;
     width: 30%;
-    height: 200px;
+    height: 100px;
     max-height: 200px;
-    box-shadow: 3px 5px 7px 3px var(--selected-color);
+    border: 1px solid var(--selected-color);
     margin: 15px;
     overflow: hidden;
     transition: all 0.5s;
     filter: drop-shadow(0 0 50px var(--selected-color));
     &-img {
+      display: flex;
       margin-bottom: 5px;
-      max-width: 60px;
-      max-height: 60px;
+      width: 100%;
+      justify-content: center;
+      img {
+        width: 50px;
+        height: 50px;
+        max-width: 50px;
+        max-height: 50px;
+      }
     }
     &:hover {
-      box-shadow: 7px 7px 7px 7px var(--selected-color);
+      box-shadow: 0 0 5px 7px var(--selected-color);
+      height: 200px;
     }
     &-title {
       font-family: Roboto Bold;
       margin: 10px 0;
       font-size: 16px;
+      text-align: center;
     }
     &-descr {
       font-size: 14px;

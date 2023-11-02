@@ -13,41 +13,6 @@ const AboutMePage = () => {
     dispatch(toogleWidthSidebar(true));
   }, []);
 
-  const ChooseCard = () => {
-    switch (selectedCard) {
-      case "fullStack":
-        return (
-          <p className="about__view-descr">
-            Я являюсь Full-stack разработчиком и мои обязанности охватывают как клиентскую, так и
-            серверную стороны веб-приложений. Моя работа включает создание и обслуживание API для
-            взаимодействия с клиентской частью приложения. Я также работаю с базами данных, включая
-            их создание, обновление и написание запросов. На клиентской стороне я занимаюсь
-            разработкой интерактивных и динамических пользовательских интерфейсов, придавая
-            приложениям высокую производительность и обеспечивая управление состоянием приложения.
-          </p>
-        );
-      case "frontend":
-        return (
-          <p className="about__view-descr">
-            Я разрабатываю веб-приложения и веб-сайты, фокусируясь на клиентской стороне. Моя работа
-            включает в себя создание интерактивных и динамических пользовательских интерфейсов,
-            обеспечение высокой производительности приложений, а также управление состоянием
-            приложения.
-          </p>
-        );
-      case "backend":
-        return (
-          <p className="about__view-descr">
-            Я разрабатываю серверную часть веб-приложения. Моя работа включает в себя создание и
-            обслуживание API для взаимодействия с клиентской частью приложения. Я также занимаетесь
-            работой с базами данных, включая создание, обновление и запросы к данным.
-          </p>
-        );
-      default:
-        return <p className="about__view-descr">Я разрабатываю full-stack приложения</p>;
-    }
-  };
-
   const cardStyles = {
     fullStack: selectedCard === "fullStack" ? "about__card_selected" : "",
     frontend: selectedCard === "frontend" ? "about__card_selected" : "",
@@ -65,7 +30,7 @@ const AboutMePage = () => {
               className={`about__card ${cardStyles.backend}`}
             >
               <div className="about__card-header">
-                <div className="about__card-title">Backend разработка</div>
+                <div className="about__card-title">Режим работы</div>
                 <div className="about__card-icon">
                   <FontAwesomeIcon
                     icon="fa-solid fa-database"
@@ -74,25 +39,36 @@ const AboutMePage = () => {
                   />
                 </div>
               </div>
-              <p className="about__card-descr">
-                Я создаю и поддерживаю серверные приложения и базы данных, обеспечивая их
-                надежность, производительность и безопасность.
-              </p>
+              <div className="about__card-descr">
+                <p>
+                  <span>График работы: </span> офис / удаленно / гибрид
+                </p>
+                <p>
+                  <span>Релокация: </span> любой город или страна
+                </p>
+                <p>
+                  <span>Время работы:</span> не имеет значения
+                </p>
+              </div>
             </div>
             <div
               onClick={() => setSelectedCard("frontend")}
               className={`about__card ${cardStyles.frontend}`}
             >
               <div className="about__card-header">
-                <div className="about__card-title">Frontend разработка</div>
+                <div className="about__card-title">Обучение</div>
                 <div className="about__card-icon">
                   <FontAwesomeIcon icon="fa-solid fa-code" style={{ color: "#559fff" }} size="xl" />
                 </div>
               </div>
-              <p className="about__card-descr">
-                Я создаю интерфейсы для веб-приложений, обеспечивая их функциональность, структуру и
-                дизайн, чтобы пользователи могли взаимодействовать с веб-сайтами и приложениями.
-              </p>
+              <div className="about__card-descr">
+                <p>
+                  <span>Backend обучение: </span>самостоятельное обучение C# и .NET с наставником
+                </p>
+                <p>
+                  <span>Frontend обучение: </span> курсы Udemy
+                </p>
+              </div>
             </div>
             <div
               onClick={() => setSelectedCard("fullStack")}
@@ -108,11 +84,18 @@ const AboutMePage = () => {
                   />
                 </div>
               </div>
-              <p className="about__card-descr">
-                Я создаю полноценные веб-приложения, обеспечивая как серверную, так и клиентскую
-                стороны, чтобы пользователи могли взаимодействовать с ними через красивый и
-                функциональный интерфейс.
-              </p>
+              <div className="about__card-descr">
+                <p>
+                  <span>Языки программирования:</span> C#, JavaScript, SQL
+                </p>
+                <p>
+                  <span>Основные фреймворки и библиотеки:</span> .NET, Entity Framework, React,
+                  Redux, Axios
+                </p>
+                <p>
+                  <span>Языки разметок и стилей:</span> CSS, SCSS, SASS
+                </p>
+              </div>
             </div>
           </div>
           <div className="about__view">
@@ -120,7 +103,10 @@ const AboutMePage = () => {
             <div className="about__view-subtitle">
               Моя работа заключается в создании современных веб-приложений
             </div>
-            <ChooseCard />
+            <p className="about__view-descr">
+              Мне 25 лет, я занимаюсь программированием с Октября 2022 года. За это время я смог
+              изучить множество различных технологий и языков программирования.
+            </p>
           </div>
         </section>
       </main>

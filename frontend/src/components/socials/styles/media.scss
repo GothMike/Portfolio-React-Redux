@@ -30,5 +30,21 @@
         background-color: #32b341;
       }
     }
+    &_mail {
+      &:hover {
+        &::before {
+          background-color: #c5221f;
+        }
+      }
+      &::before {
+        background-color: #c5221f;
+      }
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .social {
+    margin: 15px;
   }
 }

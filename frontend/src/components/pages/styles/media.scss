@@ -126,25 +126,7 @@
     &__sticker {
       max-height: 35px;
       max-width: 35px;
-      &:nth-child(1) {
-        top: 7%;
-      }
-      &:nth-child(2) {
-        top: 0%;
-        left: 35%;
-      }
-      &:nth-child(3) {
-        top: 7%;
-        left: 45%;
-      }
-      &:nth-child(4) {
-        top: 0%;
-        left: 55%;
-      }
-      &:nth-child(5) {
-        top: 7%;
-        left: 65%;
-      }
+
       &:nth-child(6) {
         top: 15%;
         left: 75%;
@@ -171,31 +153,31 @@
       max-height: 35px;
       max-width: 35px;
       &:nth-child(1) {
-        top: 10%;
+        top: 5%;
         left: 15%;
       }
       &:nth-child(2) {
-        top: 5%;
+        top: 0%;
         left: 30%;
       }
       &:nth-child(3) {
-        top: 10%;
+        top: 5%;
         left: 45%;
       }
       &:nth-child(4) {
-        top: 5%;
+        top: 0%;
         left: 60%;
       }
       &:nth-child(5) {
-        top: 10%;
+        top: 5%;
         left: 75%;
       }
       &:nth-child(6) {
-        top: 18%;
+        top: 15%;
         left: 75%;
       }
       &:nth-child(7) {
-        top: 26%;
+        top: 25%;
         left: 85%;
       }
       &:nth-child(8) {
@@ -203,8 +185,7 @@
         left: 80%;
       }
       &:nth-child(9) {
-        top: 42%;
-        left: 85%;
+        display: none;
       }
     }
     &__wrapper {

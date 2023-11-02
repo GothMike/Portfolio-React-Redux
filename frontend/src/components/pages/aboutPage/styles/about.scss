@@ -23,7 +23,7 @@
       box-shadow: 7px 7px 7px 7px var(--selected-color);
     }
     &_selected {
-      filter: drop-shadow(0 0 5px var(--selected-color));
+      filter: drop-shadow(0 0 50px var(--selected-color));
 
       box-shadow: 5px 5px 5px 5px var(--selected-color);
       &:hover {
@@ -33,14 +33,22 @@
     &-header {
       display: flex;
       justify-content: space-between;
+      text-transform: uppercase;
     }
     &-title {
       font-family: Roboto Bold;
+
       font-size: 18px;
     }
     &-descr {
-      font-size: 16px;
+      font-size: 14px;
       padding: 5px;
+      p {
+        margin-bottom: 0;
+        span {
+          font-family: Roboto Bold;
+        }
+      }
     }
   }
   &__view {
