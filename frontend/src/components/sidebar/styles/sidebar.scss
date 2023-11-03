@@ -13,7 +13,6 @@
   &__hidden {
     width: 0%;
   }
-
   &__list {
     display: flex;
     flex-direction: column;
@@ -40,8 +39,5 @@
     font-family: Roboto bold;
     width: 100%;
     transition: all 0.3s;
-    &:hover {
-      color: var(--hover-color);
-    }
   }
 }

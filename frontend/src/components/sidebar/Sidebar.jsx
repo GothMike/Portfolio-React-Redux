@@ -32,7 +32,7 @@ const Sidebar = () => {
           <li className={`sidebar__item ${visibleItem}`}>
             <NavLink
               className="sidebar__link"
-              style={({ isActive }) => ({ color: isActive ? "#9197e0" : "inherit" })}
+              style={({ isActive }) => ({ color: isActive ? "#c1c4eb" : "inherit" })}
               to="/"
             >
               Главная
@@ -41,7 +41,7 @@ const Sidebar = () => {
           <li className={`sidebar__item ${visibleItem}`}>
             <NavLink
               className="sidebar__link"
-              style={({ isActive }) => ({ color: isActive ? "#9197e0" : "inherit" })}
+              style={({ isActive }) => ({ color: isActive ? "#c1c4eb" : "inherit" })}
               to="/about"
             >
               Обо мне
@@ -50,7 +50,7 @@ const Sidebar = () => {
           <li className={`sidebar__item ${visibleItem}`}>
             <NavLink
               className="sidebar__link"
-              style={({ isActive }) => ({ color: isActive ? "#9197e0" : "inherit" })}
+              style={({ isActive }) => ({ color: isActive ? "#c1c4eb" : "inherit" })}
               to="/skills"
             >
               Навыки
@@ -59,7 +59,7 @@ const Sidebar = () => {
           {/* <li className={`sidebar__item ${visibleItem}`}>
             <NavLink
               className="sidebar__link"
-              style={({ isActive }) => ({ color: isActive ? "#9197e0" : "inherit" })}
+              style={({ isActive }) => ({ color: isActive ? "#c1c4eb" : "inherit" })}
               to="/"
             >
               Портфолио
@@ -68,7 +68,7 @@ const Sidebar = () => {
           <li className={`sidebar__item ${visibleItem}`}>
             <NavLink
               className="sidebar__link"
-              style={({ isActive }) => ({ color: isActive ? "#9197e0" : "inherit" })}
+              style={({ isActive }) => ({ color: isActive ? "#c1c4eb" : "inherit" })}
               to="/contacts"
             >
               Контакты

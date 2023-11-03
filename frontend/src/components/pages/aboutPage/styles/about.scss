@@ -8,6 +8,7 @@
   &__cards {
     display: flex;
     flex-direction: column-reverse;
+    align-content: center;
     width: 50%;
   }
   &__card {
@@ -24,7 +25,6 @@
     }
     &_selected {
       filter: drop-shadow(0 0 50px var(--selected-color));
-
       box-shadow: 5px 5px 5px 5px var(--selected-color);
       &:hover {
         box-shadow: 5px 5px 5px 5px var(--selected-color);
@@ -63,12 +63,16 @@
       text-transform: uppercase;
     }
     &-subtitle {
-      font-size: 18px;
+      font-size: 16px;
       margin: 25px 0;
     }
     &-descr {
-      font-size: 16px;
+      font-size: 14px;
       color: var(--secondary-color);
+      p {
+        margin: 3% 0;
+        text-align: justify;
+      }
     }
   }
 }

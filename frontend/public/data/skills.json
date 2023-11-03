@@ -65,7 +65,7 @@
   },
   {
     "id": "9",
-    "img": "./icons/icon-axios.webp",
+    "img": "./icons/icon-axios.svg",
     "alt": "icon-axios",
     "title": "Axios",
     "descr": "С помощью JavaScript я создаю интерактивные и динамические элементы на веб-странице, обеспечиваю взаимодействие пользователя с контентом.",
@@ -73,7 +73,7 @@
   },
   {
     "id": "10",
-    "img": "./icons/icon-js.webp",
+    "img": "./icons/icon-js.svg",
     "alt": "icon-js",
     "title": "JavaScript",
     "descr": "  С помощью JavaScript я создаю интерактивные и динамические элементы на веб-странице, обеспечиваю взаимодействие пользователя с контентом.",
