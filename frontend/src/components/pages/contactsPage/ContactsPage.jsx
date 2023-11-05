@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { toogleWidthSidebar } from "../../../redux/actions/sidebar";
@@ -14,6 +15,10 @@ const ContactsPage = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Связаться со мной</title>
+        <meta name="description" content="Блок страницы 'Контакты' моего веб-сайта" />
+      </Helmet>
       <Sidebar />
       <main className={`content content__full`}>
         <section className="contacts">

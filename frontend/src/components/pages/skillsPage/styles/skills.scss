@@ -5,7 +5,6 @@
   align-items: center;
   flex-direction: column;
   &__subheader {
-    filter: drop-shadow(0 0 2px var(--selected-color));
     font-size: 20px;
     margin-top: 5%;
     font-family: Roboto Bold;
@@ -28,12 +27,10 @@
     margin: 15px;
     overflow: hidden;
     transition: all 0.5s;
-    filter: drop-shadow(0 0 50px var(--selected-color));
     &-img {
       display: flex;
       margin-bottom: 5px;
       justify-content: center;
-      width: 50px;
       height: 50px;
       img {
         max-width: 50px;
@@ -53,7 +50,6 @@
     &-descr {
       font-family: Roboto Light;
       font-size: 14px;
-      padding: 0 5%;
       color: var(--primary-color);
     }
   }

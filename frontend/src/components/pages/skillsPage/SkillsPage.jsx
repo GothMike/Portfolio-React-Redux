@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { toogleWidthSidebar } from "../../../redux/actions/sidebar";
@@ -31,6 +32,10 @@ const SkillsPage = () => {
     case "loading":
       return (
         <>
+          <Helmet>
+            <title>Мои навыки</title>
+            <meta name="description" content="Блок страницы 'Навыки' моего веб-сайта" />
+          </Helmet>
           <Sidebar />
           <main className="content content__full">
             <section className="skills">
@@ -49,6 +54,10 @@ const SkillsPage = () => {
     case "idle":
       return (
         <>
+          <Helmet>
+            <title>Мои навыки</title>
+            <meta name="description" content="Блок страницы 'Навыки' моего веб-сайта" />
+          </Helmet>
           <Sidebar />
           <main className="content content__full">
             <section className="skills">
@@ -63,6 +72,10 @@ const SkillsPage = () => {
     case "error":
       return (
         <>
+          <Helmet>
+            <title>Мои навыки</title>
+            <meta name="description" content="Блок страницы 'Навыки' моего веб-сайта" />
+          </Helmet>
           <Sidebar />
           <main className="content content__full">
             <section className="skills">

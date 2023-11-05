@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { toogleWidthSidebar } from "../../../redux/actions/sidebar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Helmet } from "react-helmet";
 
 import Sidebar from "../../sidebar/Sidebar";
 
@@ -21,6 +22,10 @@ const AboutMePage = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Обо мне</title>
+        <meta name="description" content="Блок страницы 'обо мне' моего веб-сайта" />
+      </Helmet>
       <Sidebar />
       <main className={`content content__full`}>
         <section className="about">
@@ -105,23 +110,15 @@ const AboutMePage = () => {
             </div>
             <div className="about__view-descr">
               <p>
-                Привет, меня зовут Михаил, и мне 25 лет. Я - веб-разработчик с годом опыта. Моя
-                специализация включает как Frontend, так и Backend разработку, и я горжусь моими
-                навыками и знаниями.
-              </p>
-
-              <p>
-                У меня есть pet-проекты разной тематики, что позволило мне развивать навыки как на
-                чистом Frontend, так и на Backend, а также в Full-stack разработке. Это помогло мне
-                лучше понять, как создавать полноценные веб-приложения от начала и до конца.
+                Я веб-разработчик с годом опыта, специализируюсь как на Frontend, так и на Backend
+                разработке. У меня есть pet-проекты в разных сферах, что помогло мне развивать
+                навыки как Full-stack разработчика.
               </p>
 
               <p>
                 Меня отличает ответственность, трудолюбие и готовность к постоянным изменениям. Я
-                верю в то, что веб-разработка - это бесконечное путешествие, и я всегда готов к
-                быстрой адаптации к новым технологиям и вызовам. Если у вас есть интересные проекты
-                или идеи, не стесняйтесь связаться со мной. Я готов к новым вызовам и готов внести
-                свой вклад в их реализацию.
+                всегда готов к быстрой адаптации к новым технологиям и вызовам. С удовольствием
+                внесу свой вклад в интересные проекты и идеи.
               </p>
             </div>
           </div>

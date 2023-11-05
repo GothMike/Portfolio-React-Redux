@@ -54,10 +54,6 @@
   &__view {
     width: 40%;
     transition: all 0.3s;
-
-    &:hover {
-      filter: drop-shadow(0 0 50px var(--selected-color));
-    }
     &-title {
       font-family: Roboto Bold;
       text-transform: uppercase;

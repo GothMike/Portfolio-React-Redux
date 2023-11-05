@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { toogleWidthSidebar } from "../../../redux/actions/sidebar";
 import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 
 import Sidebar from "../../sidebar/Sidebar";
 import Socials from "../../socials/Socials";
@@ -14,6 +15,13 @@ const MainPage = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Главная</title>
+        <meta
+          name="description"
+          content="Привет, меня зовут Михаил, и я веб-программист. Я создаю уникальные веб-приложения и веб-сайты, которые сочетают в себе креативный дизайн и высокую производительность."
+        />
+      </Helmet>
       <Sidebar />
       <main className="content content__full">
         <div className="content__photo">
@@ -44,7 +52,7 @@ const MainPage = () => {
           <img className="content__sticker" src="./icons/icon-redux.svg" alt="icon-redux" />
           <img className="content__sticker" src="./icons/icon-sharp.svg" alt="icon-sharp" />
           <img className="content__sticker" src="./icons/icon-api.webp" alt="icon-api" />
-          <img className="content__sticker" src="./icons/icon-sql.webp" alt="icon-sql" />
+          <img className="content__sticker" src="./icons/icon-sql.svg" alt="icon-sql" />
         </div>
       </main>
     </>
