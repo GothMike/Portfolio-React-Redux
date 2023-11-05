@@ -1,0 +1,42 @@
+@media (max-width: 1400px) {
+  .sidebar {
+    &__small {
+      width: 30%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    &__hidden {
+      width: 0%;
+    }
+    &__item {
+      font-size: 16px;
+      &_hidden {
+        font-size: 0px;
+      }
+    }
+    &__link {
+      &:hover {
+        color: inherit;
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .sidebar {
+    &__list {
+      padding: 0;
+      align-items: center;
+    }
+    &__item {
+      font-size: 12px;
+      line-height: 50px;
+      &_hidden {
+        font-size: 0px;
+      }
+    }
+  }
+}

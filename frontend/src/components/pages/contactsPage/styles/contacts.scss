@@ -1,0 +1,30 @@
+.contacts {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100vh;
+  filter: drop-shadow(0 0 50px var(--selected-color));
+  &__title {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: var(--selected-color);
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  &__descr {
+    color: var(--secondary-color);
+  }
+  &__wrapper {
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    &-form {
+      display: flex;
+      padding: 1%;
+      width: 40%;
+      box-shadow: 5px 5px 5px 5px var(--selected-color);
+    }
+  }
+}

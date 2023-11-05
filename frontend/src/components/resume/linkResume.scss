@@ -1,0 +1,54 @@
+.resume {
+  width: 50px;
+  height: 75px;
+  position: fixed;
+  border-radius: 50px 0 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  top: 5%;
+  right: 0;
+  background-color: var(--btn-color);
+  cursor: pointer;
+  transition: all 0.5s;
+  box-shadow: 3px 5px 7px 3px black;
+  &:hover {
+    background-color: var(--hover-btn-color);
+    width: 250px;
+    .resume__text {
+      position: static;
+      font-size: 14px;
+      opacity: 1;
+    }
+  }
+  &__text {
+    color: var(--primary-color);
+    font-family: Roboto bold;
+    margin-right: 15px;
+    font-size: 4px;
+    position: absolute;
+    left: 100%;
+    opacity: 0;
+    transition: all 1.2s;
+  }
+}
+
+@media (max-width: 1024px) {
+  .resume {
+    height: 50px;
+    &__text {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .resume {
+    top: 3%;
+    height: 35px;
+    &__text {
+      font-size: 12px;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+@media (max-width: 1024px) {
+  .contacts {
+    flex-direction: column;
+    &__wrapper {
+      margin: 10% 0;
+      width: 80%;
+      &-form {
+        width: 80%;
+      }
+    }
+    &__btn {
+      button {
+        font-size: 14px;
+        margin: 15px 0;
+        height: 40px;
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts {
+    height: 100%;
+    &__title {
+      font-size: 24px;
+    }
+    &__descr {
+      font-size: 14px;
+      text-align: justify;
+    }
+    &__btn {
+      button {
+        font-size: 12px;
+        width: 170px;
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .contacts {
+    &__title {
+      font-size: 19px;
+    }
+    &__form {
+      padding: 5%;
+    }
+    &__btn {
+      button {
+        font-size: 10px;
+      }
+    }
+  }
+}

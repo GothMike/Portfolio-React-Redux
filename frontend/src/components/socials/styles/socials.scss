@@ -1,0 +1,69 @@
+.socials {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+.social {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: inherit;
+  a {
+    z-index: 1;
+  }
+  svg {
+    color: var(--primary-color);
+  }
+  &_telegram,
+  &_linkedin,
+  &_whatsapp,
+  &_mail {
+    &:hover {
+      &::before {
+        background-color: #136e9b;
+      }
+    }
+    &::before {
+      transition: all 0.5s;
+      content: "";
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      background-color: #0088cc;
+      border-radius: 100%;
+      z-index: 0;
+      box-shadow: 5px 5px 5px rgb(39, 37, 37);
+    }
+  }
+  &_linkedin {
+    &:hover {
+      &::before {
+        background-color: #43699e;
+      }
+    }
+    &::before {
+      background-color: #183153;
+    }
+  }
+  &_whatsapp {
+    &:hover {
+      &::before {
+        background-color: #287a31;
+      }
+    }
+    &::before {
+      background-color: #32b341;
+    }
+  }
+  &_mail {
+    &:hover {
+      &::before {
+        background-color: #881614;
+      }
+    }
+    &::before {
+      background-color: #c5221f;
+    }
+  }
+}

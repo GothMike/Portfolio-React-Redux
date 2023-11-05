@@ -1,0 +1,215 @@
+@media (max-width: 1024px) {
+  .content {
+    min-height: 100vh;
+    height: 100%;
+    &__photo {
+      margin-top: 50px;
+
+      transform: translateX(-25%);
+    }
+    &__title {
+      text-transform: uppercase;
+      font-size: 32px;
+    }
+    &__descr {
+      font-size: 24px;
+      font-family: Roboto bold;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    background-color: var(--primary-backdround-color);
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    filter: inherit;
+    &__sticker {
+      max-height: 35px;
+      max-width: 35px;
+      &:nth-child(1) {
+        top: 0%;
+      }
+      &:nth-child(2) {
+        top: -10%;
+      }
+      &:nth-child(3) {
+        top: 0%;
+      }
+      &:nth-child(4) {
+        top: -10%;
+      }
+      &:nth-child(5) {
+        top: 0%;
+      }
+      &:nth-child(6) {
+        top: 15%;
+        left: 75%;
+      }
+      &:nth-child(7) {
+        top: 25%;
+        left: 85%;
+      }
+      &:nth-child(8) {
+        top: 35%;
+        left: 75%;
+      }
+      &:nth-child(9) {
+        top: 45%;
+        left: 85%;
+      }
+    }
+    &__wrapper {
+      margin-top: 10%;
+      align-items: center;
+    }
+    &__title {
+      display: none;
+    }
+    &__descr {
+      font-size: 18px;
+      font-family: Roboto bold;
+      text-align: center;
+    }
+    &__photo {
+      transform: translateX(0);
+    }
+    img {
+      margin-top: 100px;
+      width: 50%;
+    }
+    &__social {
+      &_telegram {
+        &:hover {
+          &::before {
+            background-color: #136e9b;
+          }
+        }
+        &::before {
+          background-color: #136e9b;
+        }
+      }
+      &_linkedin {
+        &:hover {
+          &::before {
+            background-color: #183153;
+          }
+        }
+        &::before {
+          background-color: #183153;
+        }
+      }
+      &_whatsapp {
+        &:hover {
+          &::before {
+            background-color: #32b341;
+          }
+        }
+        &::before {
+          background-color: #32b341;
+        }
+      }
+    }
+    &__btn {
+      button {
+        width: 150px;
+        height: 35px;
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .content {
+    &__sticker {
+      max-height: 35px;
+      max-width: 35px;
+
+      &:nth-child(6) {
+        top: 15%;
+        left: 75%;
+      }
+      &:nth-child(7) {
+        top: 25%;
+        left: 85%;
+      }
+      &:nth-child(8) {
+        top: 35%;
+        left: 75%;
+      }
+      &:nth-child(9) {
+        top: 45%;
+        left: 85%;
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .content {
+    &__sticker {
+      max-height: 35px;
+      max-width: 35px;
+      &:nth-child(1) {
+        top: 5%;
+        left: 5%;
+      }
+      &:nth-child(2) {
+        top: 0%;
+        left: 25%;
+      }
+      &:nth-child(3) {
+        top: 5%;
+        left: 40%;
+      }
+      &:nth-child(4) {
+        top: 0%;
+        left: 60%;
+      }
+      &:nth-child(5) {
+        top: 5%;
+        left: 80%;
+      }
+      &:nth-child(6) {
+        display: none;
+      }
+      &:nth-child(7) {
+        display: none;
+      }
+      &:nth-child(8) {
+        display: none;
+      }
+      &:nth-child(9) {
+        display: none;
+      }
+    }
+    &__wrapper {
+      padding: 2%;
+      width: 70%;
+    }
+    &__descr {
+      font-size: 13px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .content {
+    &__descr {
+      font-size: 12px;
+    }
+    &__photo {
+      margin-top: 0;
+    }
+    &__wrapper {
+      padding: 0%;
+      width: 80%;
+    }
+    img {
+      margin-top: 100px;
+      width: 50%;
+    }
+  }
+}
